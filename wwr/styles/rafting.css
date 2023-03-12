@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #082838;
+  --secondary-color: #5a4025;
+  --accent1-color: hsl(61, 84%, 71%);
+  --accent2-color: #a6f3b0;
+
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Nunito", sans-serif;
+
+  --nav-background-color: var(--primary-color);
+  --nav-link-color: var(--accent2-color);
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--secondary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: var(--paragraph-font);
+}
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 30px;
+}
+
+header img {
+  width: 400px;
+  height: auto;
+  justify-self: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline;
+  background-color: var(--accent2-color);
+  padding: 8px 18px;
+  border: 1px solid var(--accent1-color);
+  transition: 0.8s;
+  margin: 0;
+}
+
+header nav ul li:hover {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--accent2-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../images/rafting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.hero h1,
+.hero article {
+  position: absolute;
+}
+
+.hero h1 {
+  left: 0;
+  right: 0;
+  top: 18px;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hero article {
+  background-color: rgba(114, 78, 245, 0.75);
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: fit-content;
+  padding: 12px;
+}
+
+.hero article img {
+  float: right;
+  width: 200px;
+}
+
+section,
+footer {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+section {
+  padding: 18px 0;
+  text-align: center;
+}
+
+section h2,
+section p {
+  margin-bottom: 18px;
+}
+
+footer {
+  display: grid;
+  grid-template: 1fr / 90% 1fr 1fr 1fr;
+  border-top: 3px solid var(--accent1-color);
+  padding: 18px 0;
+}
+
+footer p {
+  grid-column: 1/2;
+  text-align: center;
+}
+
+section.history {
+  display:center ;
+
+}
+
+section.history h2 {
+  text-align: center;
+}
+
+section.history img {
+  width: 300px;
+}
+
+section.history img,
+section.history p {
+  align-self: center;
+  justify-self: center;
+  text-align: start;
+}
+
+section.adventures {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.adventures .adventures_pics {
+  display: grid;
+  justify-content: space-between;
+}
+
+section.adventures .adventures_pics figure img {
+  width: 500px;
+}
