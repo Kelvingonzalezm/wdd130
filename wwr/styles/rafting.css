@@ -135,14 +135,16 @@ footer p {
 }
 
 section.history {
-  display:center ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr;
 
 }
 
 section.history h2 {
-  text-align: center;
+  grid-column: 1/5;
+  
 }
-
 section.history img {
   width: 300px;
 }
@@ -161,10 +163,10 @@ section.adventures {
 }
 
 section.adventures .adventures_pics {
-  display: grid;
+  display: flex;
   justify-content: space-between;
 }
 
 section.adventures .adventures_pics figure img {
-  width: 500px;
+  width: 200px;
 }
