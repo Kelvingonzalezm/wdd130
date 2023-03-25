@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> About  </title>
+    <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
+    <meta name="author" content="Kelvin Gonzalez">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        footer {
+            margin-top: 30px;
+        }
+
+        form {
+            
+            margin: 0 auto;
+            width: 400px;
+           
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        form li+li {
+            margin-top: 1em;
+        }
+
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+
+        input,
+        textarea {
+           
+            font: 1em sans-serif;
+
+      
+            width: 300px;
+            box-sizing: border-box;
+
+            border: 1px solid #999;
+        }
+
+        input:focus,
+        textarea:focus {
+           
+            border-color: #000;
+        }
+
+        textarea {
+            
+            vertical-align: top;
+
+            
+            height: 5em;
+        }
+
+        .button {
+           
+            padding-left: 90px;
+            
+        }
+
+        button {
+           
+            margin-left: 0.5em;
+        }
+
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+           
+            display: none;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <img src="images/crossedoars.jpeg" alt="Rafting Site Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+           
+          </nav>
+        
+
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+
+        <h2>Send Us & Message</h2>
+        <p>Rafting Adventure</p>
+        <p>Phone: 599-6366-5888</p>
+        <P>Email: kelvingonzalez@gmail.com</P>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30172.927342492836!2d-65.2592666!3d-19.036639!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1679777266901!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
+
+        </ul>
+    </form>
+
+
+</main>
+    <footer>
+        <p>&copy; Rafting Adventure - 2023 | kelvin Gonzalez</p>
+      
+            <a href="https://facebook.com">
+              <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+              <img src="images/twe.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+              <img src="images/instagram.png" alt="Instagram">
+            </a>
+          
+
+    </footer>
+    
+  </body>
+  </html>
