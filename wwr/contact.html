@@ -2,95 +2,13 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Contact Us  </title>
     <meta name="description" content="help communicate the user with the company.">
     <meta name="author" content="Kelvin Gonzalez">
     <link rel="stylesheet" href="styles/rafting.css">
-    <style>
-        footer {
-            margin-top: 30px;
-        }
-
-        form {
-            
-            margin: 0 auto;
-            width: 400px;
-           
-            padding: 1em;
-            border: 1px solid #ccc;
-            border-radius: 1em;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        form li+li {
-            margin-top: 1em;
-        }
-
-        label {
-            /* Uniform size & alignment */
-            display: inline-block;
-            width: 90px;
-            text-align: right;
-        }
-
-        input,
-        textarea {
-           
-            font: 1em sans-serif;
-
-      
-            width: 300px;
-            box-sizing: border-box;
-
-            border: 1px solid #999;
-        }
-
-        input:focus,
-        textarea:focus {
-           
-            border-color: #000;
-        }
-
-        textarea {
-            
-            vertical-align: top;
-
-            
-            height: 5em;
-        }
-
-        .button {
-           
-            padding-left: 90px;
-            
-        }
-
-        button {
-           
-            margin-left: 0.5em;
-        }
-
-        #feedback {
-            background-color: antiquewhite;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: .5em;
-           
-            display: none;
-        }
-
-        .moveDown {
-            margin-top: 3em;
-        }
-    </style>
+    
   </head>
   <body>
     <header>
@@ -109,39 +27,74 @@
 
     </header>
     <main>
-        <h1>Contact Us</h1>
+        <div id="contact-page">
+            <div class="information-column"> 
+                <h1>Contact Us</h1>
+            
 
-        <h2>Send Us & Message</h2>
-        <p>Rafting Adventure</p>
-        <p>Phone: 599-6366-5888</p>
-        <P>Email: kelvingonzalez@gmail.com</P>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30172.927342492836!2d-65.2592666!3d-19.036639!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1679777266901!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>Send Us & Message</h2>
+                <p>Rafting Adventure</p>
+        
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30172.927342492836!2d-65.2592666!3d-19.036639!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1679777266901!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Phone: 599-6366-5888</p>
+                <P>Email: kelvingonzalez@gmail.com</P>
+            
+        </div>    
+        <div class="form-column">
+                <h2>Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Name and Email</legend>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset id="purpose">
+                        <legend>Purpose</legend>
+                        <div>
+                            <input type="radio" id="purposeChoice1" name="purpose" value="General Inquiry">
+                            <label for="purposeChoice1">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="purposeChoice2" name="purpose" value="Reservation Question">
+                            <label for="purposeChoice2">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="purposeChoice3" name="purpose" value="Website Suggestion">
+                            <label for="purposeChoice3">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <textarea name="message" id="message" rows="10"></textarea>
+                    </fieldset>
+                    <div id="checkbox-container">
+                        <input type="checkbox" id="newsletter" value="subscribe">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                        
+                    </div>
+                </form>
+        </div>
+        <section id="employees">
+            <h3>We are waiting for you to contact us</h3>
+            <div class="image-container">
+                <figure>
+                    <img src="./images/employee1.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="./images/employee2.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="./images/employee3.jpg" alt="">
+                </figure>
+            </div>
+        </section>
 
-        <div id="feedback"></div>
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </li>
-
-            <li class="button">
-                <button type="submit">Send your message</button>
-            </li>
-
-        </ul>
-    </form>
-
-
-</main>
+    </main>
     <footer>
         <p>&copy; Rafting Adventure - 2023 | kelvin Gonzalez</p>
       
