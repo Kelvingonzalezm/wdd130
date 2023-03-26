@@ -174,7 +174,7 @@ section.adventures .adventures_pics figure img {
 #contact-page {
   max-width: 80vw;
   margin: 0 auto;
-  display: flexbox;
+  display: flex;
   justify-content: space-between;
   padding: 64px 0;
 }
@@ -238,7 +238,7 @@ section.adventures .adventures_pics figure img {
 }
 
 #purpose div,
-#checkbox-container {
+#checkbox {
   display: flex;
   align-items: center;
   gap: 12px;
