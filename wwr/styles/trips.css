@@ -190,19 +190,18 @@ figcaption a{
 }
 
 
-table{
+table {
     margin-top: 20px;
-    border-collapse: 20px;
-    border-spacing: 2px;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-table td{
+th, td {
+    border: 1px solid black;
     padding: 10px;
-    color: black;
+    text-align: center;
 }
- 
-table td a {
-    text-decoration: none;
-    color: #000;
+th {
+    background-color: lightgray;
 }
 table button{
     color: whitesmoke;
@@ -213,7 +212,9 @@ table button{
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.table-container {
+    text-align: center;
+}
 table button a{
     color: white;
     text-decoration: none;
@@ -240,7 +241,6 @@ footer {
     grid-column: 1/2;
     text-align: center;
   }
-
 
 
 
