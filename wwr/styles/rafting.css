@@ -90,7 +90,7 @@ a {
 }
 
 .hero article {
-  background-color: rgba(114, 78, 245, 0.75);
+  background-color: rgba(177, 161, 236, 0.75);
   left: 0;
   right: 0;
   top: 0px;
@@ -243,7 +243,12 @@ section.adventures .adventures_pics figure img {
   align-items: center;
   gap: 12px;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: #1353a6;
+  display:flex;
+  justify-content: center;
+}
 #contact-page .form-column div button {
   background-color: var(--accent2-color);
   width: 100%;
@@ -283,3 +288,106 @@ section.adventures .adventures_pics figure img {
   width: 33%;
 }
 
+.purpose_offer {
+  background-color:#e8eec9;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  padding: 10px;
+}
+.action {
+  display: grid;
+  justify-content: center;
+  padding: 30px;
+}
+
+.trip {
+  background-color:#9ee6f4;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  padding: 10px;
+}
+.button {
+  width: 90%;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.76rem;
+  background-color: #264653;
+  color: aliceblue;
+  border-radius: .6rem;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+table, th, td {
+  border: 1px solid;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  padding: 20px;
+}
+
+
+.checkout {
+  width: 97%; 
+}
+
+.contact_us_button {
+  width: 100%;
+}
+
+.wireframe {
+  width: 10%;
+  height: 70%;
+}
+
+.purpose_offer {
+  background-color:#e8eec9;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  padding: 10px;
+
+}
+
+label {
+  text-align: left;
+  padding-right: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 1rem;
+  background-color:#53ee6d;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color:#121111;
+}
+
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  background-color:#d8e7ec;
+  padding: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}

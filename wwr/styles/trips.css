@@ -242,5 +242,7 @@ footer {
     text-align: center;
   }
 
-
-
+  .book-link {
+    color: blue;
+  }
+  
